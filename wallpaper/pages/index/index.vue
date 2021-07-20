@@ -10,9 +10,6 @@
 			</div>
 		</div>
 		<div id="wallpapers">
-			<div class="wpitem">
-				<iframe src="//player.bilibili.com/player.html?aid=846687651&bvid=BV1y54y1n7aK&cid=372072488&page=1" style='width: 100%;height: 100%;' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-			</div>
 			<div v-for="(item,index) in paperList" class='wpitem' :data-index="index" @mouseenter="onWPItemOver" @mouseleave="onWPItemOut">
 				<image mode="aspectFill" :lazy-load="true" class='image' :src='item["url_mid"]'/>
 				<div v-if="item.showmenu" class='downmenu' style='position:absolute;z-index:2;bottom:5px;right:5px;background:rgba(0,0,0,.3)'>
